@@ -1,0 +1,247 @@
+.contact_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2.7%;
+    margin-bottom: 2%;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contact_header {
+    margin-top: 4%;
+}
+
+
+/* contact form style */
+.form_container {
+    height: 500px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: var(--img-color);
+    padding: 30px;
+    border-left: 5px solid var(--main-color);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px var(--shdow-color);
+    overflow: hidden;
+}
+
+.form__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.heading {
+    display: block;
+    color: var(--bg-color);
+    font: 700 2rem Arial;
+    margin-bottom: 20px;
+}
+
+.form_container form .input {
+    color: var(--sub-color);
+    width: 100%;
+    background-color: var(--bg-color);
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font: bold 1rem Arial;
+    transition: all 0.2s ease-in-out;
+    border-left: 1px solid transparent;
+}
+
+.form_container form .input:focus {
+    border-left: 5px solid var(--main-color);
+}
+
+.form_container form .textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    font: bold 1rem Arial;
+    resize: none;
+    max-height: 150px;
+    margin-bottom: 40px;
+    border-left: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.form_container form .textarea:focus {
+    border-left: 5px solid var(--main-color);
+}
+
+.btn_submit {
+    position: relative;
+
+}
+
+.button-form {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    max-width: auto;
+}
+
+/* Contact img  */
+.contact__right {
+    max-width: 500px;
+    width: 100%;
+    object-fit: fill;
+}
+
+
+
+.divider {
+    width: 100%;
+    max-width: 1200px;
+    height: 6px;
+    background-color: var(--sub-color);
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+
+/* Contact footer  */
+
+.contact__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -2%;
+    width: 100%;
+    max-width: 1200px;
+    height: 200px;
+    background: var(--main-color);
+    padding: 30px;
+    border-radius: 40% 40% 0 0;
+}
+
+.social__link .social__content {
+    margin: 0 20px;
+    position: relative;
+}
+
+.social__link .social__content .tooltip {
+    position: absolute;
+    bottom: 50%;
+    left: 10px;
+    transform: translateX(-30%);
+    color: var(--sub-color);
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    font: 400 14px Arial;
+    transition: all 0.3s ease;
+}
+
+.social__link .social__content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    bottom: -50px;
+}
+
+.social__link .social__content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: var(--sub-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.social__link .social__content a:hover {
+    box-shadow: 3px 2px 45px 0px var(--sub-color);
+}
+
+.social__icon {
+    color: var(--main-color);
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+
+.social__link .social__content a:hover {
+    color: var(--bg-color);
+}
+
+.social__link .social__content a .filled {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--main-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.social__link .social__content a:hover .filled {
+    height: 100%;
+}
+
+.social__link .social__content a[data-social="linkedin"] .filled,
+.social__link .social__content a[data-social="linkedin"]~.tooltip {
+    background-color: #0762C8;
+}
+
+.social__link .social__content a[data-social="github"] .filled,
+.social__link .social__content a[data-social="github"]~.tooltip {
+    background-color: #24262a;
+}
+
+.social__link .social__content a[data-social="facebook"] .filled,
+.social__link .social__content a[data-social="facebook"]~.tooltip {
+    background: #1877F2;
+}
+
+.social__link .social__content a[data-social="telegram"] .filled,
+.social__link .social__content a[data-social="telegram"]~.tooltip {
+    background-color: #24A1DE;
+}
+
+/* social icon design  */
+.social__link {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* footer created by */
+
+.footer__created {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    font: 400 1.2rem Arial;
+    color: var(--bg-color);
+}
+
+/* Google map style */
+
+.contact_map {
+    margin-bottom: 2%;
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
