@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 
 const Home = () => {
   const typeEffect = Typewriter({
-    words: ['<Website Developer/>'],
+    words: ['<Website Developer/>','<App Developer/>'],
     typeSpeed: 100,
     deleteSpeed: 50,
     delaySpeed: 1500,
