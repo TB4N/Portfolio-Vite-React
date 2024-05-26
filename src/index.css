@@ -520,6 +520,10 @@ button:hover span {
     margin-top: 20%;
   }
 
+  .project_buttons button{
+    width: 140px;
+  }
+
   /* Contact section */
   .contact_header {
     margin-top: 20%;
