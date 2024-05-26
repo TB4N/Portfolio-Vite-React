@@ -4,6 +4,10 @@ import { FaLinkedin, FaGithub, FaFacebook, FaTelegram } from 'react-icons/fa'
 import ContactImg from '../../assets/envelope.svg'
 import GoogleLocation from '../fragments/GoogleLocation'
 import ContactForm from '../fragments/ContactForm'
+import LoaderScroll from '../fragments/LoaderScroll'
+import { fadeIn } from '../fragments/variants'
+import { motion } from 'framer-motion'
+
 const Contact = () => {
   return (
     <section className='contact_section'>
@@ -13,18 +17,37 @@ const Contact = () => {
         <div className="form_container">
           <span class="heading">Get in touch</span>
           {/* form fragment */}
-          <div className="form__row">
+          <motion.div 
+          variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          
+          className="form__row">
             <ContactForm />
             <div className="contact__right">
               <img src={ContactImg} alt="Contact image" className='contact__image' />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-      <div className="divider"></div>
-      <div className="contact_map">
+
+      <motion.div 
+      variants={fadeIn("left", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.7 }}
+      className="divider"></motion.div>
+
+      <motion.div 
+      variants={fadeIn("right", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.7 }}
+      className="contact_map">
         <GoogleLocation />
-      </div>
+      </motion.div>
+
       <div className="contact__footer">
         {/* my social */}
         <ul class="social__link">
@@ -69,7 +92,7 @@ const Contact = () => {
         </ul>
         <h2 className='footer__created'>&copy; {new Date().getFullYear()} Created by Steven Nariz. All rights reserved.</h2>
       </div>
-
+      <LoaderScroll />
     </section>
   )
 }

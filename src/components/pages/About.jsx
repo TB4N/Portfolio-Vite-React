@@ -5,24 +5,38 @@ import Working from '../../assets/working.svg'
 import Certificate from '../../assets/certificate.svg'
 import { SiHtml5, SiJavascript, SiCss3, SiVisualstudio, SiVisualbasic, SiReact, SiMongodb, SiXampp, SiNpm } from 'react-icons/si'
 import { FaJava, FaGitAlt, FaGithub } from 'react-icons/fa'
-import { motion, useScroll } from 'framer-motion'
-
+import LoaderScroll from '../fragments/LoaderScroll'
+import { fadeIn } from '../fragments/variants'
+import { motion } from 'framer-motion'
 
 
 const About = () => {
-  const { scrollYProgress } = useScroll();
+
   return (
     <section className='about-section'>
-      <h1 className='header_about animate__animated animate__shakeY'>About Me</h1>
+      <h1 className='header_about'>About Me</h1>
       <div className="card_about">
-        <div className="card">
+        <motion.div 
+        variants={fadeIn("left", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+
+        className="card">
           <div className="card_content">
             <img src={Profile} alt="My Profile on About" className='profile' />
             <p className='about_me'>I am a graduate of Bachelor of Science in Information Technology and live in San Jose Rodriguez Rizal Province. I have a passion for web development and aspire to be a Full-Stack developer. I worked as an encoder to help my family and bought a computer to practice other programming languages and grow as a programmer. Give me a chance to prove my programming skills.</p>
           </div>
-        </div>
-        <h1 className='header_about header_about animate__animated animate__shakeY'>Experience</h1>
-        <div className="card">
+        </motion.div>
+
+        <h1 className='header_about'>Experience</h1>
+        <motion.div 
+          variants={fadeIn("right", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+
+        className="card">
           <div className="card_content">
             <img src={Working} alt="My Experience in About" className='profile' />
             <p className='about_me'>
@@ -43,15 +57,22 @@ const About = () => {
               Installing software;
             </p>
           </div>
-        </div>
-        <h1 className='header_about animate__animated animate__fadeInRightBig'>Certificate</h1>
-        <div className="card">
+        </motion.div>
+
+        <h1 className='header_about'>Certificate</h1>
+        <motion.div 
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+
+        className="card">
           <div className="card_content">
             <img src={Certificate} alt="My Certificate in About" className='profile' />
             <p className='about_me'>
               <a href="https://www.freecodecamp.org/certification/StevenNariz/responsive-web-design" target="_blank" rel="noopener noreferrer">Responsive Web  Design
-              Free Code Camp
-              April 16, 2024</a>
+                Free Code Camp
+                April 16, 2024</a>
               <br />
               <br />
               TWSP Programming (JAVA) NC III
@@ -64,10 +85,16 @@ const About = () => {
               May 15, 2023
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <h1 className='header_about animate__animated animate__fadeInLeftBig'>Technologies</h1>
-      <div className="components">
+      <h1 className='header_about'>Technologies</h1>
+      <motion.div 
+      variants={fadeIn("left", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.7 }}
+      
+      className="components">
         <div className="btn">
           <span className="img_container">
             <SiHtml5 className='icon-component' />
@@ -140,10 +167,8 @@ const About = () => {
           </span>
           <span className="bg"></span>
         </div>
-      </div>
-      <motion.div className="loader_scroll"
-        style={{ scaleX: scrollYProgress }}>
       </motion.div>
+      <LoaderScroll />
     </section>
   )
 }
