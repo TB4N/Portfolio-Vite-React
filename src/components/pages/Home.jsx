@@ -28,7 +28,6 @@ const Home = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
-
         className="home_images">
         <img src={Background} alt="Background" className='home_background' />
         <img src={Profile} alt="Home Profile" className='home_profile' />
