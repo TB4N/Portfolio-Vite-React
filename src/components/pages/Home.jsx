@@ -4,7 +4,6 @@ import Profile from '../../assets/profile.png'
 import Resume from '../../assets/STEVEN QUISMUNDO NARIZ IT-RESUME.pdf'
 import '../pages/Home.css'
 import { Typewriter } from 'react-simple-typewriter'
-import 'animate.css'
 import { NavLink } from 'react-router-dom';
 import { fadeIn } from '../fragments/variants'
 import { motion } from 'framer-motion'
