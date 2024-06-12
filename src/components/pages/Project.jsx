@@ -1,6 +1,6 @@
 import React from 'react'
 import '../pages/Project.css'
-import Working from '../../assets/working.svg'
+import SMS from '../../assets/project2.jpg'
 import Programming from '../../assets/coding.svg'
 import Portfolio from '../../assets/project1.jpg'
 import { NavLink } from 'react-router-dom'
@@ -37,7 +37,7 @@ const Project = () => {
       viewport={{ once: false, amount: 0.7 }}
 
       class="project__card">
-        <img src={Working} alt="Project 1" className='project__img' />
+        <img src={SMS} alt="Project 1" className='project__img' />
         <div class="project__content">
           <h2 className="project__title">Student Management System</h2>
           <p class="project__description">The Student Management System is a desktop application designed to manage student information efficiently. Developed using C# and SQL Server, this system aims to provide a user-friendly interface for educational institutions to maintain and manage their students' records, including personal details, academic performance, and course enrollment.</p>
