@@ -42,7 +42,7 @@ const Project = () => {
           <h2 className="project__title">Project</h2>
           <p class="project__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
           <div className="project_buttons">
-            <a href='https://drive.google.com/drive/u/0/folders/1oxciBcN2SuGr5Gk4NMPyeUKqFCkv7HKchttps://drive.google.com/file/d/11c4fvRqHv8Uj1BHYtQy3xQNgEwN0-11v/view?usp=drive_link' target='_blank'><button class=""><span>Live Demo</span></button></a>
+            <a href='https://drive.google.com/u/0/video/captions/edit?id=11c4fvRqHv8Uj1BHYtQy3xQNgEwN0-11v' target='_blank'><button class=""><span>Live Demo</span></button></a>
             <a href='https://github.com/TB4N/SchoolManagementSystemWithMySql' target='_blank'><button class="secondary"><span>Github</span></button></a>
           </div>
         </div>
