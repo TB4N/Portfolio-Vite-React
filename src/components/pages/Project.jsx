@@ -39,8 +39,8 @@ const Project = () => {
       class="project__card">
         <img src={Working} alt="Project 1" className='project__img' />
         <div class="project__content">
-          <h2 className="project__title">Project</h2>
-          <p class="project__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <h2 className="project__title">Student Management System</h2>
+          <p class="project__description">The Student Management System is a desktop application designed to manage student information efficiently. Developed using C# and SQL Server, this system aims to provide a user-friendly interface for educational institutions to maintain and manage their students' records, including personal details, academic performance, and course enrollment.</p>
           <div className="project_buttons">
             <a href='https://drive.google.com/file/d/11c4fvRqHv8Uj1BHYtQy3xQNgEwN0-11v/view?usp=drive_link' target='_blank'><button class=""><span>Live Demo</span></button></a>
             <a href='https://github.com/TB4N/SchoolManagementSystemWithMySql' target='_blank'><button class="secondary"><span>Github</span></button></a>
