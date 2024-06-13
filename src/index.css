@@ -246,7 +246,9 @@ button:hover span {
 }
 
 @media screen and (max-width: 768px) {
-
+  .loader_scroll {
+    margin-top: 60px;
+  }
   .nav__menu {
     gap: 2rem;
   }
@@ -324,7 +326,6 @@ button:hover span {
 }
 
 @media screen and (max-width: 550px) {
-
   /* home section */
   .home_images {
     margin-top: 15%;
@@ -406,6 +407,12 @@ button:hover span {
   .project_header {
     margin-top: 14%;
     font-size: 2.6rem;
+  }
+  .project__title{
+    font-size: 2rem;
+  }
+  .project__description{
+    font-size: .8rem;
   }
 
   button span {
@@ -523,6 +530,10 @@ button:hover span {
   .project_buttons button{
     width: 125px;
   }
+  .project__title{
+    font-size: 1.8rem;
+  }
+
 
   /* Contact section */
   .contact_header {
